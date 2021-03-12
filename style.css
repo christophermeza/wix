@@ -43,3 +43,31 @@ h4 {
     width: 100%;
   }
 
+/*body continued*/
+#home, #history, #experience, #contact {
+    background-color: white;
+}
+
+#me, #skills, #projects, footer {
+    background-color: silver;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+}
+
+section, footer {
+    padding:  30px 50px 30px 50px;
+}
+
+.leftcol, .rightcol {
+    max-width: 48%;
+    flex: 1 0 15em;
+    padding: 10px;
+}
+
+img {
+    width: 500px;
+    height: auto;
+}
