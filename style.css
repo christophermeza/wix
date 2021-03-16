@@ -1,5 +1,5 @@
 body {
-    max-width: 1680px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -11,7 +11,8 @@ h4 {
 }
 
 
- ul {
+/*navbar*/
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -21,16 +22,15 @@ h4 {
     background-color: white;
     position: -webkit-sticky;
     /* Safari */
-
     position: sticky;
     top: 0;
 }
 
- li {
+li {
     display: inline;
 }
 
- a {
+a {
     display: inline-block;
     padding: 10px;
     text-decoration: none;
@@ -41,33 +41,107 @@ h4 {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
+
 
 /*body continued*/
-#home, #history, #experience, #contact {
+#home,
+#history,
+#experience,
+#contact {
     background-color: white;
 }
 
-#me, #skills, #projects, footer {
-    background-color: silver;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+#me,
+#skills,
+#projects,
+#typography,
+footer {
+    background-color: lightgrey;
 }
 
-section, footer {
-    padding:  30px 50px 30px 50px;
+section,
+footer {
+    padding: 30px 50px 30px 50px;
 }
 
-.leftcol, .rightcol {
+.left,
+.right {
     max-width: 48%;
     flex: 1 0 15em;
-    padding: 10px;
+}
+
+
+/*about me*/
+#me {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#me p {
+    padding: 0px 100px;
+    text-align: center;
 }
 
 img {
     width: 500px;
     height: auto;
+    float: right;
+    padding: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+/*skills*/
+#skills h3, #skills h4 {
+    text-align: left;
+}
+
+#skills h4 {
+    margin: -10px 0px;
+}
+
+#skills img {
+    height: 800px; 
+}
+
+#skills .column {
+    padding: 0px;
+}
+
+#skills .column p {
+    padding: 0px;
+    text-align: left;
+}
+
+.column {
+    flex: 50%;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+}
+
+#history h3, #history h4, #history p, #experience h3, #experience h4, #experience p {
+    text-align: left; 
+    padding: 0px 100px;
+}
+
+#interactive .column {
+background-color: lightgrey;
+}
+
+.column p {
+    padding: 25px;
+    text-align: center;
+}
+
+
+/*footer*/
+footer h3, footer h4 {
+    text-align: left;
 }
