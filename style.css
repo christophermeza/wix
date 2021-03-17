@@ -86,19 +86,20 @@ footer {
     text-align: center;
 }
 
-img {
+#me img, #skills img {
     width: 500px;
     height: auto;
     float: right;
     padding: 25px;
 }
 
-.row {
+.row{
     display: flex;
 }
 
 /*skills*/
-#skills h3, #skills h4 {
+#skills h3,
+#skills h4 {
     text-align: left;
 }
 
@@ -107,7 +108,8 @@ img {
 }
 
 #skills img {
-    height: 800px; 
+    height: 750px;
+    object-fit: none;
 }
 
 #skills .column {
@@ -119,6 +121,23 @@ img {
     text-align: left;
 }
 
+/*history*/
+#history h2,
+#experience h2 {
+    padding-bottom: 15px;
+}
+
+#history h3,
+#history p,
+#experience h3,
+#experience p {
+    margin: -15px 0px;
+}
+
+#experience p {
+    margin-bottom: 30px;
+}
+
 .column {
     flex: 50%;
     height: auto;
@@ -126,22 +145,140 @@ img {
     margin: 20px;
 }
 
-#history h3, #history h4, #history p, #experience h3, #experience h4, #experience p {
-    text-align: left; 
+
+#history h3,
+#history h4,
+#history p,
+#experience h3,
+#experience h4,
+#experience p {
+    text-align: left;
     padding: 0px 100px;
 }
 
-#interactive .column {
-background-color: lightgrey;
+/*projects*/
+#projects {
+    position: relative;
 }
 
-.column p {
+#projects img {
+    width: 1000px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+#projects h2 {
+    font-size: 32px;
+}
+
+#projects div {
+    position: absolute;
+    top: 40%;
+    width: 92%;
+    color: white;
+}
+
+
+/*photography*/
+#photography .row {
+    margin-left: 250px;
+}
+
+#photography .wcolumn {
+    float: none;
+}
+
+#photography img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+
+
+
+
+/* Style the images inside the grid */
+.wcolumn img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.wcolumn img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+#photography .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+    border: 1px solid gray;
+}
+
+/* Expanding image text */
+#imgtext {
+    text-align: center;
+    color: white;
+    background-color: dimgray;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    height: 40px;
+}
+
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*interactive design*/
+#interactive .column {
+    background-color: lightgrey;
+}
+
+#interactive .column p {
     padding: 25px;
     text-align: center;
 }
 
 
 /*footer*/
-footer h3, footer h4 {
+footer h3,
+footer h4 {
     text-align: left;
 }

@@ -61,13 +61,12 @@
 
     <section id="skills">
         <div>
-            <img src=""
-                alt="profile image">
+            <img src="../wix/images/macbook_and_design.jpg" alt="macbook, design">
         </div>
 
         <h2>Skills</h2>
         <div class="row">
-            
+
             <div class="column">
                 <h3>Visual Design</h3>
                 <h4>2 years</h4>
@@ -151,18 +150,59 @@
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <img src="../wix/images/coding.jpg" alt="code">
+        <div>
+            <h2>Projects</h2>
+        </div>
     </section>
 
     <section id="photography">
         <div>
-            <h3>Photography</h3>
+            <h2>Photography</h2>
+        </div>
+        <div class="row">
+            <div class="wcolumn">
+                <img src="../wix/images/photography/SingingByThePiano.png" alt="singing by the piano">
+            </div>
+            <div class="wcolumn">
+                <img src="../wix/images/photography/ReadingOnCouch.jpg" alt="reading on the couch">
+            </div>
+            <div class="wcolumn">
+                <img src="../wix/images/photography/WritingOnHammock.jpg" alt="writing on the hammock">
+            </div>
+        </div>
+        <div class="row">
+            <div class="wcolumn">
+                <img src="../wix/images/photography/Yoga.jpg" alt="yoga">
+            </div>
+            <div class="wcolumn">
+                <img src="../wix/images/photography/PhotographyInGarden.png" alt="photographer in the garden">
+            </div>
+            <div class="wcolumn">
+                <img src="../wix/images/photography/PuttingMakeUpOn.jpg" alt="putting make-up on">
+            </div>
+        </div>
+        <div class="row">
+            <div class="wcolumn">
+                <img src="../wix/images/photography/Chilling.jpg" alt="chilling">
+            </div>
+            <div class="wcolumn">
+                <img src="../wix/images/photography/Stretching.jpg" alt="stretching">
+            </div>
+            <div class="wcolumn">
+                <img src="../wix/images/photography/ModelStaringOutWindow.jpg" alt="staring out the window">
+            </div>
+        </div>
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
         </div>
     </section>
 
     <section id="typography">
         <div>
-            <h3>Typography</h3>
+            <h2>Typography</h2>
             <div class="row">
                 <div class="column">
                     <h4>Chapter 1 Opening</h4>
@@ -310,6 +350,7 @@
         <p>©2021</p>
     </footer>
 
+    <!--fixed navbar-->
     <script>
         window.onscroll = function () {
             myFunction()
@@ -324,6 +365,17 @@
             } else {
                 navbar.classList.remove("sticky");
             }
+        }
+    </script>
+
+    <!--open image-->
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
         }
     </script>
 
