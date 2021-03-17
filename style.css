@@ -199,71 +199,22 @@ footer {
 }
 
 
-
-
+/*typography*/
+#typography img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 /* Style the images inside the grid */
 .wcolumn img {
     opacity: 0.8;
-    cursor: pointer;
 }
 
 .wcolumn img:hover {
     opacity: 1;
 }
-
-/* Clear floats after the columns */
-#photography .row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* The expanding image container */
-.container {
-    position: relative;
-    display: none;
-    border: 1px solid gray;
-}
-
-/* Expanding image text */
-#imgtext {
-    text-align: center;
-    color: white;
-    background-color: dimgray;
-    font-size: 20px;
-    margin-top: -5px;
-    margin-bottom: 5px;
-    padding-top: 10px;
-    height: 40px;
-}
-
-
-/* Closable button inside the expanded image */
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*interactive design*/
