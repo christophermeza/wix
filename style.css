@@ -37,12 +37,6 @@ a {
     margin-top: 25px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 
 /*body continued*/
 #home,
@@ -56,8 +50,9 @@ a {
 #skills,
 #projects,
 #typography,
+#webdesign,
 footer {
-    background-color: lightgrey;
+    background-color: lightgrey !important;
 }
 
 section,
@@ -86,14 +81,15 @@ footer {
     text-align: center;
 }
 
-#me img, #skills img {
+#me img,
+#skills img {
     width: 500px;
     height: auto;
     float: right;
     padding: 25px;
 }
 
-.row{
+.row {
     display: flex;
 }
 
@@ -213,17 +209,17 @@ footer {
     height: 700px;
     overflow: auto;
     background-color: black;
-  }
-  
-  /* Modal Content */
-  .modal-content {
+}
+
+/* Modal Content */
+.modal-content {
     position: relative;
     margin: auto;
     padding: 0;
     width: 90%;
     max-width: 1200px;
-  }
-  
+}
+
 #myModal .modal-content .mySlides img {
     display: block;
     margin: 0 auto;
@@ -233,7 +229,7 @@ footer {
     padding: 100px 0px;
 }
 
-#myModal .modal-content .mySlides .sing, 
+#myModal .modal-content .mySlides .sing,
 #myModal .modal-content .mySlides .chilling {
     margin: 0 auto;
     width: 30%;
@@ -242,7 +238,7 @@ footer {
     padding: 80px 0px;
 }
 
-#myModal .modal-content .mySlides .read, 
+#myModal .modal-content .mySlides .read,
 #myModal .modal-content .mySlides .makeup {
     display: block;
     margin: 0 auto;
@@ -290,35 +286,33 @@ footer {
     padding: 190px 0px;
 }
 
-
-  /* The Close Button */
-  .close {
+.close {
     color: white;
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .mySlides {
+}
+
+.mySlides {
     display: none;
-  }
-  
-  .cursor {
+}
+
+.cursor {
     cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: fixed;
     top: 50%;
@@ -332,67 +326,43 @@ footer {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 75px;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .caption-container {
+}
+
+.caption-container {
     text-align: center;
     background-color: black;
     padding: 2px 16px;
     color: white;
-  }
-  
-  .demo {
+}
+
+.demo {
     opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
+}
+
+.active,
+.demo:hover {
     opacity: 1;
-  }
-  
-  #photography img.hover-shadow {
+}
+
+#photography img.hover-shadow {
     transition: 0.3s;
-  }
-  
-  .hover-shadow:hover {
+}
+
+.hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 /*typography*/
@@ -403,7 +373,6 @@ footer {
     margin: 0 auto;
 }
 
-/* Style the images inside the grid */
 .wcolumn img {
     opacity: 0.8;
 }
@@ -413,19 +382,52 @@ footer {
 }
 
 
+/*wdd*/
+.column .wddimg {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+}
+
+.column .wddp {
+    text-align: center;
+}
+
+
 /*interactive design*/
 #interactive .column {
     background-color: lightgrey;
 }
 
+#interactive .column img {
+    display: block;
+    margin: 0 auto;
+    width: 275px;
+    height: 180px;
+    object-fit: cover;
+}
+
+#interactive a {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin: 25px 100px;
+}
+
 #interactive .column p {
-    padding: 25px;
+    padding: 10px 20px;
     text-align: center;
 }
 
 
 /*footer*/
-footer h3,
-footer h4 {
+
+footer h3 {
     text-align: left;
+}
+
+footer h3,
+footer p {
+    padding-left: 20px;
 }
